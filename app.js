@@ -57,7 +57,7 @@ app.post('/api/ticket',(req, res, next)=>{
 })
 
 // Patch - Update Status Of The Ticket
-app.patch('/api/ticket', (req, res, next) => {
+app.put('/api/ticket', (req, res, next) => {
     let {
         id,
         status
@@ -91,7 +91,7 @@ app.patch('/api/ticket', (req, res, next) => {
 
 
 // Patch - Update Name Of The Ticket
-app.patch('/api/ticket/edit', (req, res, next) => {
+app.put('/api/ticket/edit', (req, res, next) => {
     let {
         id,
         name
